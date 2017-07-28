@@ -1,3 +1,4 @@
+from machine import Pin
 
 class WemosLedMatrix:
     ''' A Micropython driver for the Wemos LED Matrix Shield.
@@ -15,11 +16,10 @@ class WemosLedMatrix:
 
     '''
 
-    def __init__(self, clockpin, datapin, intensity=7, activate=True):
+    def __init__(self, clockpin, datapin, intensity=7, active=True):
         self.clock_pin = clockpin
         self.data_pin = datapin
-        self.intensity = intensity
-        self.active = activate
+        self.active = active
 
         clockpin.off()
         clockpin.on()
@@ -85,6 +85,7 @@ class WemosLedMatrix:
         self.active = display_on
         self.send_command(0x80 | self.intensity | (0x08 if self.active else 0))
 
-from machine import Pin
-
-leds = WemosLedMatrix(clockpin=Pin(14, Pin.OUT), datapin=Pin(13, Pin.OUT), intensity=0)
+leds = WemosLedMatrix(
+    clockpin = Pin(14, Pin.OUT),
+    datapin = Pin(13, Pin.OUT),
+    intensity = 0)
