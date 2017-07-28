@@ -1,7 +1,7 @@
-from led_matrix_scroller import scroll
+import uwemosledmatrix
 
 def main():
-    scroll('hello! ', 100)
+    uwemosledmatrix.scroll('hello! ', 50)
 
 if __name__ == '__main__':
     main()
