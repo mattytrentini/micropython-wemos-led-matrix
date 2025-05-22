@@ -1,0 +1,10 @@
+{
+  "urls": [
+    ["uwemosledmatrix/__init__.py", "github:mattytrentini/micropython-wemos-led-matrix/uwemosledmatrix/__init__.py"],
+    ["uwemosledmatrix/wemos_led_matrix.py", "github:mattytrentini/micropython-wemos-led-matrix/uwemosledmatrix/wemos_led_matrix.py"],
+    ["uwemosledmatrix/led_matrix_scroller.py", "github:mattytrentini/micropython-wemos-led-matrix/uwemosledmatrix/led_matrix_scroller.py"],
+    ["uwemosledmatrix/font8x8_basic.py", "github:mattytrentini/micropython-wemos-led-matrix/uwemosledmatrix/font8x8_basic.py"]
+  ],
+  "version": "1.0.0",
+  "deps": []
+}
